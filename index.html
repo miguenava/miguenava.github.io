@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Nava</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#inicio">Inicio</a>
+        <a href="#atajos">Atajos</a>
+        <a href="#secciones">Secciones</a>
+    </nav>
+
+    <div class="contenedor-principal" id="inicio">
+        <header class="perfil-header fade-in">
+            <img src="fotoCurriculum.jpg" alt="Miguel Nava" class="foto-perfil">
+            <div class="info-personal">
+                <h1>Miguel Nava</h1>
+                <p>técnico informático con gran potencial en el aprendizaje y desarrollo de las nuevas tecnologias, con gran facinacion a las IA's</p>
+            </div>
+        </header>
+
+        <section class="banner fade-in" id="atajos">
+            <h2>Atajos de Acción</h2>
+            <div class="botones-accion">
+                <div class="sixth-container">
+                    <span class="border"></span><span class="border"></span>
+                    <span class="border"></span><span class="border"></span>
+                    <a href="mailto:miguenavaa13@icloud.com"><button>Enviar Correo</button></a>
+                </div>
+
+                <div class="sixth-container" id="btn-imprimir">
+                    <span class="border"></span><span class="border"></span>
+                    <span class="border"></span><span class="border"></span>
+                    <button>Imprimir CV</button>
+                </div>
+
+                <div class="sixth-container">
+                    <span class="border"></span><span class="border"></span>
+                    <span class="border"></span><span class="border"></span>
+                    <a href="https://www.linkedin.com/in/miguel-omar-nava-vindel-27a99a3a5" target="_blank"><button>LinkedIn</button></a>
+                </div>
+
+                <div class="sixth-container">
+                    <span class="border"></span><span class="border"></span>
+                    <span class="border"></span><span class="border"></span>
+                    <a href="https://github.com/miguenava" target="_blank"><button>GitHub</button></a>
+                </div>
+            </div>
+        </section>
+
+        <main class="grid-secciones" id="secciones">
+            <div class="caja" id="caja-sobremi">
+                <h2>Sobre Mí</h2>
+                <div class="preview">Perfil profesional y objetivos...</div>
+                <div class="detalle">
+                    <p>Soy estudiante de Sistemas Microinformáticos y Redes con experiencia en soporte técnico, administración de sistemas y desarrollo web. Trabajo con entornos Windows y Linux, incluyendo Windows Server y Ubuntu Server. Tengo conocimientos en HTML, CSS, JavaScript y Python, además de redes y mantenimiento de equipos. He participado en proyectos de programación y servicio técnico, combinando habilidades técnicas con atención al cliente. Me interesa seguir creciendo en desarrollo tecnológico, automatización y proyectos informáticos.</p>
+                </div>
+                <div class="sixth-container btn-toggle-container">
+                    <span class="border"></span><span class="border"></span>
+                    <span class="border"></span><span class="border"></span>
+                    <button onclick="toggleCaja('caja-sobremi')">Más información</button>
+                </div>
+            </div>
+
+            <div class="caja" id="caja-habilidades">
+                <h2>Habilidades</h2>
+                <div class="preview">Técnicas y Personales...</div>
+                <div class="detalle">
+                    <p><strong>Técnicas:</strong> Administración de Servidores y equipos tanto Linux como Windows; montaje y mantenimiento de equipos; Microsoft Office; Programación en HTML, CSS, JavaScript, Python; Direccionamiento IP y cableado estructurado y prevención de riesgos laborales.</p>
+                    <p><strong>Personales:</strong> Resolución de problemas, trabajo en equipo, atención al cliente y soporte técnico.</p>
+                </div>
+                <div class="sixth-container btn-toggle-container">
+                    <span class="border"></span><span class="border"></span>
+                    <span class="border"></span><span class="border"></span>
+                    <button onclick="toggleCaja('caja-habilidades')">Más información</button>
+                </div>
+            </div>
+
+            <div class="caja" id="caja-experiencia">
+                <h2>Experiencia Laboral</h2>
+                <div class="preview">Historial profesional...</div>
+                <div class="detalle">
+                    <ul class="lista-items">
+                        <li><strong>Árbitro de fútbol</strong> - RFMF</li>
+                        <li><strong>Programador web</strong> - Viax</li>
+                        <li><strong>Técnico Soft/Hard</strong> - Esprominho (Braga, Portugal)</li>
+                        <li><strong>Técnico y venta al cliente</strong> - FNAC</li>
+                    </ul>
+                </div>
+                <div class="sixth-container btn-toggle-container">
+                    <span class="border"></span><span class="border"></span>
+                    <span class="border"></span><span class="border"></span>
+                    <button onclick="toggleCaja('caja-experiencia')">Más información</button>
+                </div>
+            </div>
+
+            <div class="caja" id="caja-proyectos">
+                <h2>Proyectos</h2>
+                <div class="preview">Acceso a mi repositorio...</div>
+                <div class="detalle">
+                    <p>Puedes consultar todos mis proyectos, código fuente y desarrollos actuales directamente en mi perfil de GitHub Projects:</p>
+                    <br>
+                    <a href="https://github.com/miguenava?tab=projects" target="_blank" style="color: #C7B7A3; font-weight: bold; text-decoration: underline;">GitHub Projects - Miguel Nava</a>
+                </div>
+                <div class="sixth-container btn-toggle-container">
+                    <span class="border"></span><span class="border"></span>
+                    <span class="border"></span><span class="border"></span>
+                    <button onclick="toggleCaja('caja-proyectos')">Más información</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
