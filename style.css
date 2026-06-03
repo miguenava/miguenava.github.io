@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #E8D8C4;
-    color: #561C24;
+    background-color: #FFFFFF; /* Fondo blanco limpio */
+    color: #1A1A1A; /* Texto negro suave (menos agresivo que el #000 puro) */
     padding-top: 80px;
     line-height: 1.6;
 }
@@ -17,14 +17,23 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #561C24;
+    background: #111111; /* Negro puro para la barra superior */
     padding: 15px;
     display: flex;
     justify-content: center;
     gap: 20px;
     z-index: 1000;
+    border-bottom: 1px solid #E0E0E0; /* Línea sutil de separación */
 }
-.navbar a { color: #C7B7A3; text-decoration: none; font-weight: bold; }
+.navbar a { 
+    color: #AAAAAA; /* Gris claro para los enlaces en reposo */
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease;
+}
+.navbar a:hover {
+    color: #FFFFFF; /* Blanco al pasar el cursor */
+}
 
 .contenedor-principal {
     max-width: 1100px;
@@ -39,29 +48,29 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 3px solid #561C24;
+    border: 3px solid #111111; /* Borde negro para la foto */
     object-fit: cover;
 }
 
 .banner {
-    background-color: #561C24;
-    color: #E8D8C4;
+    background-color: #111111; /* Fondo negro para el banner principal */
+    color: #FFFFFF; /* Texto blanco */
     padding: 30px;
     border-radius: 20px;
     text-align: center;
 }
 
-/* animacion botones */
+/* Animación botones (Atajos de Acción) */
 .sixth-container {
     position: relative;
     width: 180px;
     height: 50px;
     overflow: hidden;
-    border: 2px solid #C7B7A3;
+    border: 2px solid #E0E0E0; /* Borde gris claro */
     border-radius: 12px;
     display: inline-block;
     margin: 10px;
-    background: #C7B7A3;
+    background: #F5F5F5; /* Fondo de botón gris muy claro */
 }
 
 .sixth-container button, .sixth-container a button {
@@ -71,7 +80,7 @@ body {
     height: 100%;
     background: none;
     border: none;
-    color: #561C24;
+    color: #111111; /* Texto negro */
     font-weight: bold;
     cursor: pointer;
     transition: color .5s ease;
@@ -80,7 +89,7 @@ body {
 .sixth-container .border {
     position: absolute;
     z-index: 1;
-    background: #561C24;
+    background: #111111; /* El fondo de la animación pasa a ser negro */
     width: 35px;
     height: 35px;
     transform: rotate(45deg);
@@ -97,10 +106,10 @@ body {
 }
 
 .sixth-container:hover button {
-    color: #C7B7A3;
+    color: #FFFFFF; /* El texto se vuelve blanco al hacer hover */
 }
 
-/* cajas */
+/* Cajas de secciones */
 .grid-secciones {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -112,8 +121,8 @@ body {
 }
 
 .caja {
-    background-color: #561C24;
-    color: #E8D8C4;
+    background-color: #111111; /* Fondo negro para las tarjetas */
+    color: #FFFFFF; /* Texto blanco en las tarjetas */
     padding: 30px;
     border-radius: 20px;
     text-align: center;
@@ -122,6 +131,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid #222222;
+}
+
+/* Opcional: un sutil efecto de elevación al pasar el ratón por las cajas */
+.caja:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
 }
 
 .detalle { display: none; margin-top: 20px; width: 100%; text-align: justify; }
